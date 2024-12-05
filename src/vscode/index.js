@@ -24,6 +24,13 @@ if (!parseFullPath) {
   alfy.cache.set('fullPath', JSON.stringify(parseFullPath));
 }
 
-const filtered = parseFullPath.filter((item) => item?.title?.includes(input));
+// 根据输入筛选结果
+let filtered;
+if (input.includes('./')) {
+  const filename = input.slice(2);
+  filtered = parseFullPath.filter((item) => item?.subtitle?.includes(filename));
+} else {
+  filtered = parseFullPath.filter((item) => item?.title?.includes(input));
+}
 
 alfy.output(filtered);
