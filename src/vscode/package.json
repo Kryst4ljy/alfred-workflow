@@ -1,0 +1,21 @@
+{
+  "name": "vscode-alfred-workflow",
+  "version": "1.0.0",
+  "description": "alfred workflow to open vscode ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "alfred",
+    "workflow",
+    "vscode"
+  ],
+  "type": "module",
+  "author": "zhouxiaolei",
+  "license": "ISC",
+  "dependencies": {
+    "alfy": "^2.1.0",
+    "fast-glob": "^3.3.2"
+  }
+}
